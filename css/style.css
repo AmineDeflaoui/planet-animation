@@ -2,12 +2,23 @@
     from {opacity: 1;}
     to {opacity: 0.2;}
 }
+@keyframes sunfire {
+    from {box-shadow: 0px 0px 50px #f5c91a;}
+    to {box-shadow: 0px 0px 100px #f5c91a;}
+}
+@keyframes spin{
+    from{transform:rotate(0);}
+    to{transform: rotate(360deg);}
+}
 html,body{
     width: 100%;
     height: 100%;
 }
 #universe{
-    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background: black;
     background: -webkit-radial-gradient(#555,#000);
     background: -moz-radial-gradient(#555,#000);
@@ -15,15 +26,19 @@ html,body{
     background: radial-gradient(#555,#000);
 }
 #stars{
-    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     height: 100%;
     width: 100%;
     background-image: url("../img/stars.png");
+    /*background-repeat: repeat;
+    background-size: cover;*/
     animation: starpulse 3s infinite alternate;
 }
 
 #sun{
-    z-index: 3;
     width: 200px;
     height: 200px;
     border-radius: 200px;
@@ -34,23 +49,50 @@ html,body{
     background: -o-radial-gradient(#f5c313,#ec7e08);
     background: radial-gradient(#f5c313,#ec7e08);
     box-shadow: 0px 0px 50px #f5c91a;
-    position: absolute;
+    position: relative;
     top: 250px;
-    left: 580px;
+    left: 590px;
+    animation: sunfire 3s infinite alternate;
+
 
 }
-/*
+
 #earthorbit{
-    
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 131px;
+    left: 440px;
+    /*border: solid 2px red;*/
+    border-radius: 100%;
+    animation: spin 35s linear infinite;
+
 }
 #earth{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    animation: spin 20s linear infinite;
 }
+
 #moonorbit{
-    
+    width: 120px;
+    height: 120px;
+    /*border: solid 2px green;*/
+    border-radius: 100%;
+    position: absolute;
+    top:6px;
+    left:-2px;
+    animation: spin 7s linear infinite;*/
 }
 #moon{
-    width: 30px;
-    height: 30px;
-}*/
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 12px;
+    left: -3px;
+    animation: spin 6s linear infinite;
+    
+}

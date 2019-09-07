@@ -63,9 +63,15 @@ html,body{
     position: absolute;
     top: 131px;
     left: 440px;
+<<<<<<< HEAD
     /*border: solid 2px red;*/
     border-radius: 100%;
     animation: spin 35s linear infinite;
+=======
+    /*border: solid 2px red;*/
+    border-radius: 100%;
+    animation: spin 35s linear infinite;
+>>>>>>> origin/master
 
 }
 #earth{
@@ -80,12 +86,20 @@ html,body{
 #moonorbit{
     width: 120px;
     height: 120px;
+<<<<<<< HEAD
     /*border: solid 2px green;*/
     border-radius: 100%;
     position: absolute;
     top:6px;
     left:-2px;
-    animation: spin 7s linear infinite;*/
+=======
+    /*border: solid 2px green;*/
+    border-radius: 100%;
+    position: absolute;
+    top:6px;
+    left:-2px;
+>>>>>>> origin/master
+    animation: spin 7s linear infinite;
 }
 #moon{
     width: 25px;

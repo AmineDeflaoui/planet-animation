@@ -37,7 +37,6 @@ html,body{
     background-size: cover;*/
     animation: starpulse 3s infinite alternate;
 }
-
 #sun{
     width: 200px;
     height: 200px;
@@ -53,8 +52,6 @@ html,body{
     top: 250px;
     left: 590px;
     animation: sunfire 3s infinite alternate;
-
-
 }
 
 #earthorbit{
@@ -63,16 +60,9 @@ html,body{
     position: absolute;
     top: 131px;
     left: 440px;
-<<<<<<< HEAD
     /*border: solid 2px red;*/
     border-radius: 100%;
     animation: spin 35s linear infinite;
-=======
-    /*border: solid 2px red;*/
-    border-radius: 100%;
-    animation: spin 35s linear infinite;
->>>>>>> origin/master
-
 }
 #earth{
     width: 100px;
@@ -82,23 +72,14 @@ html,body{
     left: 10px;
     animation: spin 20s linear infinite;
 }
-
 #moonorbit{
     width: 120px;
     height: 120px;
-<<<<<<< HEAD
     /*border: solid 2px green;*/
     border-radius: 100%;
     position: absolute;
     top:6px;
     left:-2px;
-=======
-    /*border: solid 2px green;*/
-    border-radius: 100%;
-    position: absolute;
-    top:6px;
-    left:-2px;
->>>>>>> origin/master
     animation: spin 7s linear infinite;
 }
 #moon{
@@ -108,5 +89,4 @@ html,body{
     top: 12px;
     left: -3px;
     animation: spin 6s linear infinite;
-    
 }
